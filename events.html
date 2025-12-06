@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details - CIS Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="image/cislogo.jpg" alt="CIS Club logo" class="logo-image">
+        <span class="logo-text" style="font-family: Century Gothic">CIS Club</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link active">Events</a></li>
+          <li><a href="members.html" class="nav-link">Join</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="event-detail-hero" style="background-image: url('image/event1.jpg');">
+      <div class="event-detail-hero-overlay"></div>
+      <div class="event-detail-hero-content">
+        <div class="container">
+          <div class="event-detail-hero-inner">
+            <div class="event-detail-date-box">
+              <span class="day">25</span>
+              <span class="month">DEC</span>
+            </div>
+            <div class="event-detail-hero-text">
+              <h1 id="event-title">Web Development Workshop</h1>
+              <div class="event-detail-hero-meta">
+                <span id="event-time">🕐 2:00 PM - 5:00 PM</span>
+                <span id="event-location">📍 Ai Lab, AB4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-detail-content">
+      <div class="container">
+        <div class="event-detail-grid">
+          <div class="event-detail-main">
+            <div class="event-detail-section">
+              <h2>About This Event</h2>
+              <p id="event-description">
+                Join us for an intensive hands-on workshop on modern web development. Learn HTML5, CSS3, 
+                and JavaScript best practices from industry experts. This workshop covers responsive design, 
+                accessibility, and performance optimization.
+              </p>
+            </div>
+
+            <div class="event-detail-section">
+              <h2>Event Information</h2>
+              <div class="event-info-grid">
+                <div class="event-info-item">
+                  <strong>Date & Time</strong>
+                  <span id="event-detail-time">December 25, 2025<br>2:00 PM - 5:00 PM</span>
+                </div>
+                <div class="event-info-item">
+                  <strong>Location</strong>
+                  <span id="event-detail-location">Computer Lab, Building A</span>
+                </div>
+                <div class="event-info-item">
+                  <strong>Capacity</strong>
+                  <span id="event-detail-capacity">50 participants</span>
+                </div>
+                <div class="event-info-item">
+                  <strong>Difficulty Level</strong>
+                  <span id="event-detail-level">Beginner to Intermediate</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-detail-section">
+              <h2>Event Agenda</h2>
+              <ul class="event-agenda-list" id="event-agenda">
+                <li><strong>2:00 PM</strong> - Welcome & Introductions</li>
+                <li><strong>2:15 PM</strong> - HTML5 Semantic Structure</li>
+                <li><strong>3:00 PM</strong> - Modern CSS3 Techniques</li>
+                <li><strong>3:45 PM</strong> - Break</li>
+                <li><strong>4:00 PM</strong> - JavaScript Fundamentals</li>
+                <li><strong>4:45 PM</strong> - Q&A and Discussion</li>
+              </ul>
+            </div>
+
+            <div class="event-detail-section">
+              <h2>What to Bring</h2>
+              <ul class="event-requirements-list" id="event-requirements">
+                <li>Laptop with text editor (VS Code recommended)</li>
+                <li>Modern web browser (Chrome, Firefox, or Safari)</li>
+                <li>Basic programming knowledge helpful but not required</li>
+              </ul>
+            </div>
+
+            <div class="event-detail-section">
+              <h2>Featured Speaker</h2>
+              <div class="event-speaker">
+                <img src="image/sarowar-sir.jpg" alt="Speaker" class="event-speaker-photo" id="speaker-photo">
+                <div class="event-speaker-info">
+                  <h4 id="speaker-name">Md. Sarwar Hossain Mollah</h4>
+                  <span class="title" id="speaker-title">Department Head, CIS</span>
+                  <p id="speaker-bio">Md. Sarwar has 10+ years of experience in web development and has mentored hundreds of students.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="event-detail-sidebar">
+            <div class="event-sidebar-card">
+              <h3>Register Now</h3>
+              <p class="event-register-status">✓ Spaces Available</p>
+              <button class="btn btn-primary" id="register-btn" style="width: 100%; margin-bottom: 15px;">Register for Event</button>
+              <p class="event-register-note">No payment required. Early registration recommended.</p>
+            </div>
+
+            <div class="event-sidebar-card">
+              <h3>Share Event</h3>
+              <div class="event-share-buttons">
+                <button class="event-share-btn" title="Share on Facebook">Facebook</button>
+                <button class="event-share-btn" title="Share on Twitter">Twitter</button>
+                <button class="event-share-btn" title="Copy Link">Link</button>
+              </div>
+            </div>
+
+            <div class="event-sidebar-card">
+              <h3>Related Events</h3>
+              <ul class="event-related-list">
+                <li><a href="event-detail.html?id=5">Database Design Workshop</a></li>
+                <li><a href="event-detail.html?id=2">CIS Club Hackathon 2025</a></li>
+                <li><a href="event-detail.html?id=6">Programming Challenge</a></li>
+              </ul>
+            </div>
+          </aside>
+
+        </div>
+
+        <div class="event-back-link">
+          <a href="events.html" class="btn btn-secondary">← Back to All Events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top of page">
+    <span class="sr-only">Back to top</span>
+    ↑
+  </button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>CIS Club</h4>
+        <p>Building tomorrow's tech leaders through collaboration and innovation.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:cisclub@diu.edu.bd">cisclub@diu.edu.bd</a></p>
+        <p>Phone: +880 1639-507665</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/diucisclub">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CIS Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

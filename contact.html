@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - CIS Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="image/cislogo.jpg" alt="CIS Club logo" class="logo-image">
+        <span class="logo-text" style="font-family: Century Gothic">CIS Club</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="members.html" class="nav-link">Join</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="page-hero-bg" style="background-image: url('image/image.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <p class="hero-subtitle">We'd love to hear from you</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p class="contact-intro">Have questions? Reach out to us through any of these channels.</p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <h3>Email</h3>
+                  <a href="mailto:cisclub@diu.edu.bd">cisclub@diu.edu.bd</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <h3>Phone</h3>
+                  <a href="tel:+15551234567">+880 1639-507665</a>
+                  <p>Mon-Fri: 9:00 AM - 5:00 PM</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <h3>Office Location</h3>
+                  <p>AB4 7th Floor<br>Room 702,<br>Daffodil International Universiy</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">🕐</div>
+                <div class="contact-text">
+                  <h3>Office Hours</h3>
+                  <p>Saturday - Thursday: 2:00 PM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Friday: Closed</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                  <span>📘</span>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                  <span>🐦</span>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <span>💼</span>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                  <span>📷</span>
+                </a>
+                <a href="#" class="social-icon" aria-label="Discord">
+                  <span>💬</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contactName">Your Name <span class="required">*</span></label>
+                <input type="text" id="contactName" name="contactName" required>
+                <span class="error-message" id="contactNameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Email <span class="required">*</span></label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <span class="error-message" id="contactEmailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" name="contactPhone">
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject <span class="required">*</span></label>
+                <select id="contactSubject" name="contactSubject" required>
+                  <option value="">Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="membership">Membership Question</option>
+                  <option value="event">Event Information</option>
+                  <option value="partnership">Partnership Opportunity</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-message" id="contactSubjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message <span class="required">*</span></label>
+                <textarea id="contactMessage" name="contactMessage" rows="6" required></textarea>
+                <span class="error-message" id="contactMessageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+
+              <div id="contactSuccessMessage" class="form-success-message" style="display: none;">
+                <h3>✓ Message Sent Successfully!</h3>
+                <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section">
+      <div class="container">
+        <h2>Find Us on Campus</h2>
+        <div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3587099393003!2d90.31539559678953!3d23.8768956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ada2664e21%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1764934257618!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top of page">
+    <span class="sr-only">Back to top</span>
+    ↑
+  </button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>CIS Club</h4>
+        <p>Building tomorrow's tech leaders through collaboration and innovation.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:cisclub@diu.edu.bd">cisclub@diu.edu.bd</a></p>
+        <p>Phone: +880 1639-507665</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/diucisclub">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CIS Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

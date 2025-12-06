@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS Club – Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="image/cislogo.jpg" alt="CIS Club logo" class="logo-image">
+        <span class="logo-text" style="font-family: Century Gothic;">CIS Club</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="members.html" class="nav-link">Join</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-bg-slider" aria-label="Featured background carousel">
+      <div class="hero-bg-container">
+        <div class="hero-bg-slide active" style="background-image: url('image/image.jpg');"></div>
+        <div class="hero-bg-slide" style="background-image: url('image/background2.jpg');"></div>
+        <div class="hero-bg-slide" style="background-image: url('image/background3.jpg');"></div>
+      </div>
+
+      <div class="hero-bg-overlay"></div>
+
+      <div class="hero-bg-content">
+        <div class="hero-content-wrapper">
+          <h1>The Heart</h1>
+          <p class="hero-tagline" style="font-family: Lucida Handwriting;">Of Our Community</p>
+          <div class="hero-cta-buttons">
+            <a href="members.html" class="btn btn-primary btn-lg">Join Us Today</a>
+            <a href="events.html" class="btn btn-secondary btn-lg">View Events</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="bg-slider-nav bg-slider-prev" id="bgSliderPrev" aria-label="Previous background">‹</button>
+      <button class="bg-slider-nav bg-slider-next" id="bgSliderNext" aria-label="Next background">›</button>
+      
+      <div class="bg-slider-dots" id="bgSliderDots" aria-label="Background slide indicators">
+        <button class="bg-dot active" data-slide="0"></button>
+        <button class="bg-dot" data-slide="1"></button>
+        <button class="bg-dot" data-slide="2"></button>
+      </div>
+    </section>
+
+    <section class="section welcome-section">
+      <div class="container">
+        <h2>Welcome to CIS Club</h2>
+        <div class="welcome-content">
+          <p>At DIU CIS Club, we believe in fostering a community of innovators who are driven by a passion for programming, leadership,
+            and collaboration. Our motto, "Code. Lead. Inspire." encapsulates the core values we stand for. We focus on programming
+            excellence, encouraging our members to enhance their technical skills while embracing leadership opportunities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-event-section">
+      <div class="container">
+        <h2>Featured Event</h2>
+        <article class="featured-event-card">
+          <div class="event-image">
+            <img src="image/fevent2.jpg" alt="Python Bootcamp workshop">
+          </div>
+          <div class="event-details">
+            <h3>DIU Club Enrollment Campaign</h3>
+            <p class="event-meta">December 15, 2025 | 10:00 AM - 4:00 PM</p>
+            <p>We are looking for talented indivisuals. Join to enhance your skills with us. </p>
+            <div class="event-tags">
+              <span class="tag">DIU</span>
+              <span class="tag">CIS Club</span>
+              <span class="tag">Enrollment Campaign</span>
+            </div>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stats-section">
+      <div class="container">
+        <h2>By the Numbers</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3 class="stat-number">500+</h3>
+            <p class="stat-label">Active Members</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">50+</h3>
+            <p class="stat-label">Annual Events</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">100+</h3>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number">40+</h3>
+            <p class="stat-label">Industry Partners</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container">
+        <h2>Ready to Join Our Community?</h2>
+        <p>Become a member and unlock exclusive access to workshops, resources, and networking opportunities.</p>
+        <a href="members.html" class="btn btn-primary btn-lg">Become a Member</a>
+      </div>
+    </section>
+  </main>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top of page">
+    <span class="sr-only">Back to top</span>
+    ↑
+  </button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>CIS Club</h4>
+        <p>Building tomorrow's tech leaders through collaboration and innovation.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:cisclub@diu.edu.bd">cisclub@diu.edu.bd</a></p>
+        <p>Phone: +880 1639-507665</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/diucisclub">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CIS Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

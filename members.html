@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join CIS Club - Become a Member</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="image/cislogo.jpg" alt="CIS Club logo" class="logo-image">
+        <span class="logo-text" style="font-family: Century Gothic">CIS Club</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="members.html" class="nav-link active">Join</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero join-hero">
+      <div class="page-hero-bg" style="background-image: url('image/ach.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="container">
+          <h1>Join CIS Club</h1>
+          <p class="hero-subtitle">Become part of our thriving tech community</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="container">
+        <h2>Membership Benefits</h2>
+        <p class="section-intro">Join CIS Club and unlock exclusive opportunities to grow your skills, network with professionals, and accelerate your career in technology.</p>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <span class="benefit-emoji">🎓</span>
+            </div>
+            <h3>Workshops & Training</h3>
+            <p>Access to exclusive technical workshops, coding bootcamps, and hands-on training sessions led by industry experts.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <span class="benefit-emoji">🤝</span>
+            </div>
+            <h3>Networking Events</h3>
+            <p>Connect with tech professionals, alumni, and fellow students at our networking events, career fairs, and meetups.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <span class="benefit-emoji">💼</span>
+            </div>
+            <h3>Career Support</h3>
+            <p>Get resume reviews, interview preparation, and access to internship and job opportunities from our partner companies.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <span class="benefit-emoji">🚀</span>
+            </div>
+            <h3>Project Collaboration</h3>
+            <p>Work on real-world projects, participate in hackathons, and build your portfolio with like-minded developers.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <span class="benefit-emoji">📚</span>
+            </div>
+            <h3>Learning Resources</h3>
+            <p>Access our curated library of tutorials, books, online courses, and study materials to enhance your learning.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <span class="benefit-emoji">🎯</span>
+            </div>
+            <h3>Mentorship Program</h3>
+            <p>Get paired with experienced mentors who will guide you through your academic and professional journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join-form-section">
+      <div class="container">
+        <div class="join-form-wrapper">
+          <div class="form-intro">
+            <h2>Register Now</h2>
+            <p>Fill out the form below to become a member of CIS Club. We'll get back to you within 24 hours.</p>
+          </div>
+
+          <form id="joinForm" class="join-form" novalidate>
+            <input type="hidden" id="membershipTier" name="membershipTier" value="basic">
+            
+            <div class="form-tier-display">
+              <p>Selected Plan: <strong id="selectedTierDisplay">Basic Member</strong></p>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-section-title">Personal Information</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstName" name="firstName" required>
+                  <span class="error-message" id="firstNameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastName" name="lastName" required>
+                  <span class="error-message" id="lastNameError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" required>
+                  <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" required>
+                  <span class="error-message" id="phoneError"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-section-title">Academic Information</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="studentId">Student ID <span class="required">*</span></label>
+                  <input type="text" id="studentId" name="studentId" required>
+                  <span class="error-message" id="studentIdError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="major">Major <span class="required">*</span></label>
+                  <select id="major" name="major" required>
+                    <option value="">Select your major</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Systems">Information Systems</option>
+                    <option value="Software Engineering">Software Engineering</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <span class="error-message" id="majorError"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="year">Academic Year <span class="required">*</span></label>
+                  <select id="year" name="year" required>
+                    <option value="">Select your year</option>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                    <option value="Graduate">Graduate</option>
+                  </select>
+                  <span class="error-message" id="yearError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="graduationYear">Expected Graduation <span class="required">*</span></label>
+                  <input type="text" id="graduationYear" name="graduationYear" placeholder="e.g., 2026" required>
+                  <span class="error-message" id="graduationYearError"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3 class="form-section-title">Interests & Experience</h3>
+              
+              <div class="form-group">
+                <label for="interests">Areas of Interest <span class="required">*</span></label>
+                <div class="checkbox-group" id="interests">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="Web Development">
+                    <span>Web Development</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="Mobile Development">
+                    <span>Mobile Development</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="Data Science">
+                    <span>Data Science</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="AI/Machine Learning">
+                    <span>AI/Machine Learning</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="Cybersecurity">
+                    <span>Cybersecurity</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="Cloud Computing">
+                    <span>Cloud Computing</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="Game Development">
+                    <span>Game Development</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="interests" value="UI/UX Design">
+                    <span>UI/UX Design</span>
+                  </label>
+                </div>
+                <span class="error-message" id="interestsError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="experience">Experience Level <span class="required">*</span></label>
+                <select id="experience" name="experience" required>
+                  <option value="">Select your experience level</option>
+                  <option value="Beginner">Beginner - Just starting out</option>
+                  <option value="Intermediate">Intermediate - Some projects completed</option>
+                  <option value="Advanced">Advanced - Extensive experience</option>
+                  <option value="Professional">Professional - Industry experience</option>
+                </select>
+                <span class="error-message" id="experienceError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="whyJoin">Why do you want to join CIS Club?</label>
+                <textarea id="whyJoin" name="whyJoin" rows="4" placeholder="Tell us what you hope to gain from your membership..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="form-group">
+                <label class="checkbox-label terms-label">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <span>I agree to the <a href="#" target="_blank">Terms & Conditions</a> and <a href="#" target="_blank">Privacy Policy</a> <span class="required">*</span></span>
+                </label>
+                <span class="error-message" id="termsError"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <span>Subscribe to our newsletter for updates and events</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+              <button type="reset" class="btn btn-secondary">Clear Form</button>
+            </div>
+
+            <div id="formSuccessMessage" class="form-success-message" style="display: none;">
+              <h3>✓ Application Submitted Successfully!</h3>
+              <p>Thank you for joining CIS Club. We'll review your application and send a confirmation email within 24 hours.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          
+          <div class="faq-item">
+            <h3 class="faq-question">Who can join CIS Club?</h3>
+            <p class="faq-answer">Any student enrolled at our university with an interest in computer science, information systems, or technology is welcome to join regardless of their major or experience level.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">When does membership start?</h3>
+            <p class="faq-answer">Your membership begins immediately after approval. You'll receive a confirmation email with next steps and access to our member portal.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Can I upgrade my membership later?</h3>
+            <p class="faq-answer">Yes! You can upgrade from Basic to Premium or Lifetime membership at any time. Contact us for upgrade options.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Is the membership fee refundable?</h3>
+            <p class="faq-answer">Premium membership fees are refundable within the first two weeks. Lifetime memberships are non-refundable but transferable.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">What payment methods do you accept?</h3>
+            <p class="faq-answer">We accept credit/debit cards, PayPal, and campus cash. Payment instructions will be sent after your application is approved.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">How do I stay updated on events?</h3>
+            <p class="faq-answer">Members receive weekly email updates, and we post all events on our website and social media channels. Premium members get priority notifications.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top of page">
+    <span class="sr-only">Back to top</span>
+    ↑
+  </button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>CIS Club</h4>
+        <p>Building tomorrow's tech leaders through collaboration and innovation.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:cisclub@diu.edu.bd">cisclub@diu.edu.bd</a></p>
+        <p>Phone: +880 1639-507665</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/diucisclub">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CIS Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources - CIS Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="image/cislogo.jpg" alt="CIS Club logo" class="logo-image">
+        <span class="logo-text" style="font-family: Century Gothic">CIS Club</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="members.html" class="nav-link">Join</a></li>
+          <li><a href="resources.html" class="nav-link active">Resources</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero resources-hero">
+      <div class="page-hero-bg" style="background-image: url('image/image.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="container">
+          <h1>Learning Resources</h1>
+          <p class="hero-subtitle">Curated materials to accelerate your tech journey</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resources-filter-section">
+      <div class="container">
+        <div class="resources-filter">
+          <button class="filter-btn active" data-category="all">All Resources</button>
+          <button class="filter-btn" data-category="projects">Past Projects</button>
+          <button class="filter-btn" data-category="tutorials">Tutorials</button>
+          <button class="filter-btn" data-category="tools">Tools & Software</button>
+          <button class="filter-btn" data-category="books">Books & Guides</button>
+          <button class="filter-btn" data-category="courses">Online Courses</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="container">
+        <h2>Past Projects</h2>
+        <p class="section-intro">Explore projects developed by our members. Get inspired and learn from real-world implementations.</p>
+        
+        <div class="projects-grid">
+          <article class="project-card" data-category="projects">
+            <div class="project-image">
+              <img src="image/java.jpg" alt="Java">
+              <div class="project-overlay">
+                <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk" class="project-view-btn">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Web Development</span>
+              <h3>Learn JAVA in 1 Hour</h3>
+              <p>Learn JavaScript basics with this quick, beginner-friendly course!  Perfect for new coders ready to build real skills and start programming with confidence.</p>
+              <div class="project-meta">
+                <span>👥 Team: 5 members</span>
+                <span>📅 Spring 2024</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="projects">
+            <div class="project-image">
+              <img src="image/chatbot.jpg" alt="AI Chatbot">
+              <div class="project-overlay">
+                <a href="https://www.youtube.com/watch?v=q5HiD5PNuck" class="project-view-btn">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">AI/ML</span>
+              <h3>AI-Powered Chatbot</h3>
+              <p>Natural language processing chatbot using Python and TensorFlow. Trained on custom dataset for university-specific queries.</p>
+              <div class="project-meta">
+                <span>👥 Team: 3 members</span>
+                <span>📅 Fall 2023</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">TensorFlow</span>
+                <span class="tech-badge">NLP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="projects">
+            <div class="project-image">
+              <img src="image/fitness.jpg" alt="Mobile Fitness App">
+              <div class="project-overlay">
+                <a href="https://www.youtube.com/watch?v=cCONIdrM2VI&list=PL-Y17yukoyy0sT2hoSQxn1TdV0J7-MX4K" class="project-view-btn">View Project</a>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Mobile Development</span>
+              <h3>Fitness Tracking App</h3>
+              <p>Cross-platform mobile app built with React Native. Features workout tracking, nutrition logging, and social sharing capabilities.</p>
+              <div class="project-meta">
+                <span>👥 Team: 4 members</span>
+                <span>📅 Summer 2024</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">Redux</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section tutorials-section">
+      <div class="container">
+        <h2>Tutorials & Guides</h2>
+        
+        <div class="resources-list">
+          <article class="resource-item" data-category="tutorials">
+            <div class="resource-icon">📝</div>
+            <div class="resource-content">
+              <h3>Getting Started with Git & GitHub</h3>
+              <p>Complete beginner's guide to version control. Learn basic commands, branching, and collaboration workflows.</p>
+              <span class="resource-type">Tutorial</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=Ez8F0nW6S-w&pp=ygUjZ2V0dGluZyBzdGFydGVkIHdpdGggZ2l0IGFuZCBnaXRodWI%3D" class="resource-link-btn">Access Resource →</a>
+          </article>
+
+          <article class="resource-item" data-category="tutorials">
+            <div class="resource-icon">📝</div>
+            <div class="resource-content">
+              <h3>Web Development Bootcamp</h3>
+              <p>12-week structured curriculum covering HTML, CSS, JavaScript, and modern frameworks. Includes hands-on projects.</p>
+              <span class="resource-type">Tutorial Series</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=zJSY8tbf_ys&pp=ygUYV2ViIERldmVsb3BtZW50IEJvb3RjYW1w" class="resource-link-btn">Access Resource →</a>
+          </article>
+
+          <article class="resource-item" data-category="tutorials">
+            <div class="resource-icon">📝</div>
+            <div class="resource-content">
+              <h3>Database Design Fundamentals</h3>
+              <p>Learn SQL, database normalization, and how to design efficient relational databases for your applications.</p>
+              <span class="resource-type">Tutorial</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=ztHopE5Wnpc&pp=ygUcRGF0YWJhc2UgRGVzaWduIEZ1bmRhbWVudGFscw%3D%3D" class="resource-link-btn">Access Resource →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section tools-section">
+      <div class="container">
+        <h2>Recommended Tools & Software</h2>
+        
+        <div class="tools-grid">
+          <div class="tool-card" data-category="tools">
+            <div class="tool-icon">💻</div>
+            <h3>VS Code</h3>
+            <p>Popular code editor with extensions for all major languages and frameworks.</p>
+            <a href="https://code.visualstudio.com/" target="_blank" class="btn btn-secondary btn-sm">Download</a>
+          </div>
+
+          <div class="tool-card" data-category="tools">
+            <div class="tool-icon">🐙</div>
+            <h3>GitHub Desktop</h3>
+            <p>User-friendly GUI for Git version control and GitHub integration.</p>
+            <a href="https://desktop.github.com/" target="_blank" class="btn btn-secondary btn-sm">Download</a>
+          </div>
+
+          <div class="tool-card" data-category="tools">
+            <div class="tool-icon">🎨</div>
+            <h3>Figma</h3>
+            <p>Collaborative interface design tool for prototyping and UI/UX design.</p>
+            <a href="https://www.figma.com/" target="_blank" class="btn btn-secondary btn-sm">Visit Site</a>
+          </div>
+
+          <div class="tool-card" data-category="tools">
+            <div class="tool-icon">📮</div>
+            <h3>Postman</h3>
+            <p>API development and testing tool for REST, GraphQL, and more.</p>
+            <a href="https://www.postman.com/" target="_blank" class="btn btn-secondary btn-sm">Download</a>
+          </div>
+
+          <div class="tool-card" data-category="tools">
+            <div class="tool-icon">🐳</div>
+            <h3>Docker</h3>
+            <p>Platform for developing, shipping, and running applications in containers.</p>
+            <a href="https://www.docker.com/" target="_blank" class="btn btn-secondary btn-sm">Download</a>
+          </div>
+
+          <div class="tool-card" data-category="tools">
+            <div class="tool-icon">📊</div>
+            <h3>Jupyter Notebook</h3>
+            <p>Interactive computing environment for data science and machine learning.</p>
+            <a href="https://jupyter.org/" target="_blank" class="btn btn-secondary btn-sm">Visit Site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top of page">
+    <span class="sr-only">Back to top</span>
+    ↑
+  </button>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>CIS Club</h4>
+        <p>Building tomorrow's tech leaders through collaboration and innovation.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:cisclub@diu.edu.bd">cisclub@diu.edu.bd</a></p>
+        <p>Phone: +880 1639-507665</p>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/diucisclub">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CIS Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
